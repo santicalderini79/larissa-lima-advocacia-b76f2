@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Larissa Lima Advocacia | Excelência Jurídica</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@400;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:wght@100..900&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed-dim": "#bdc2ff",
+                        "on-primary": "#ffffff",
+                        "inverse-on-surface": "#f2eff8",
+                        "tertiary": "#380b00",
+                        "background": "#fbf8ff",
+                        "on-error": "#ffffff",
+                        "inverse-surface": "#303036",
+                        "surface-dim": "#dbd9e1",
+                        "outline": "#767683",
+                        "on-surface": "#1b1b21",
+                        "on-surface-variant": "#454652",
+                        "outline-variant": "#c6c5d4",
+                        "tertiary-fixed": "#ffdbd0",
+                        "primary-fixed": "#e0e0ff",
+                        "secondary-container": "#fdc34d",
+                        "on-tertiary-fixed": "#390c00",
+                        "error-container": "#ffdad6",
+                        "surface-container-high": "#eae7ef",
+                        "on-secondary": "#ffffff",
+                        "on-primary-container": "#8690ee",
+                        "surface-variant": "#e4e1ea",
+                        "on-secondary-fixed-variant": "#5d4200",
+                        "error": "#ba1a1a",
+                        "surface-container-highest": "#e4e1ea",
+                        "surface-container-low": "#f5f2fb",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed-variant": "#7b2e12",
+                        "secondary": "#7b5800",
+                        "surface-container": "#efecf5",
+                        "secondary-fixed": "#ffdea6",
+                        "on-secondary-container": "#715000",
+                        "secondary-fixed-dim": "#f7bd48",
+                        "on-tertiary": "#ffffff",
+                        "surface-bright": "#fbf8ff",
+                        "tertiary-container": "#5c1800",
+                        "on-tertiary-container": "#e17c5a",
+                        "inverse-primary": "#bdc2ff",
+                        "tertiary-fixed-dim": "#ffb59d",
+                        "on-background": "#1b1b21",
+                        "primary-container": "#1a237e",
+                        "surface-tint": "#4c56af",
+                        "primary": "#000666",
+                        "surface": "#fbf8ff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed": "#271900",
+                        "on-primary-fixed-variant": "#343d96",
+                        "on-primary-fixed": "#000767"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "container-max": "1200px",
+                        "gutter": "24px",
+                        "base": "8px",
+                        "section-gap-desktop": "120px",
+                        "section-gap-mobile": "64px",
+                        "margin-mobile": "20px"
+                    },
+                    "fontFamily": {
+                        "headline-md-mobile": ["Montserrat"],
+                        "display-lg": ["Montserrat"],
+                        "label-md": ["Inter"],
+                        "title-lg": ["Montserrat"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Montserrat"],
+                        "display-lg-mobile": ["Montserrat"],
+                        "caption": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-md-mobile": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "title-lg": ["20px", {"lineHeight": "1.4", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "display-lg-mobile": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "caption": ["12px", {"lineHeight": "1.4", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .signature-divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin: 40px 0;
+        }
+        .signature-divider::before, .signature-divider::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background-color: #E0E0E0;
+        }
+        .signature-divider .gold-accent {
+            width: 8px;
+            height: 8px;
+            background-color: #7b5800; /* Secondary/Gold from config */
+            transform: rotate(45deg);
+            margin: 0 16px;
+        }
+        html { scroll-behavior: smooth; }
+        body { -webkit-font-smoothing: antialiased; }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-background border-b border-outline-variant/30 h-20 transition-all duration-300" id="navbar">
+<div class="max-w-container-max mx-auto px-gutter flex justify-between items-center h-full">
+<a class="font-title-lg text-title-lg text-primary tracking-tighter" href="#">
+                Larissa Lima Advocacia
+            </a>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label-md text-label-md uppercase tracking-wider text-secondary font-bold border-b border-secondary transition-colors duration-300 cursor-pointer active:opacity-70" href="#inicio">Início</a>
+<a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-secondary transition-colors duration-300 cursor-pointer active:opacity-70" href="#atuacao">Atuação</a>
+<a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-secondary transition-colors duration-300 cursor-pointer active:opacity-70" href="#escritorio">Escritório</a>
+<a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-secondary transition-colors duration-300 cursor-pointer active:opacity-70" href="#contato">Contato</a>
+</div>
+<a class="bg-primary-container text-on-primary font-label-md text-label-md uppercase tracking-wider px-6 py-3 hover:scale-[1.02] transition-transform active:opacity-70" href="https://wa.me/5511955692964" target="_blank">
+                Falar com Especialista
+            </a>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[85vh] flex items-center overflow-hidden" id="inicio">
+<div class="absolute inset-0 z-0">
+<img alt="Consultório jurídico elegante com livros e mesa de madeira" class="w-full h-full object-cover object-center brightness-[0.9] md:brightness-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOSZdhJC59d1fSp-IPHP0gAJUZaRT9ZMtga8I8EK2GkESPYF3m3W5N2HqlasQ_NPtQtpVVTJBQ3qXQHqxIO7ekd5BvY8sWEwSEKzQzdsVtMKqd2QVo3-ZdB9lUGMLODEe_dVDpyidyIDT_o3gJvK1FB_G3rm25yNZei0Ns85hgjLh_XxqFDYd6wQHiLI-k8YR4a-cl64kOiUNOKJlcpPKNvZzJ1AwVUbSh_RWgbE_lfAbEwkk39Rtftnn5VGf2fnm5sx7l6ACU8BeK"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/60 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-container-max mx-auto px-gutter w-full">
+<div class="max-w-2xl">
+<span class="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary mb-6 block">Assessoria Jurídica Premium</span>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-8">
+                        Seus direitos protegidos. <br class="hidden md:block"/>Nossa experiência. <br class="hidden md:block"/>Sua segurança.
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 leading-relaxed">
+                        Compromisso intransigente com a justiça através de uma abordagem técnica, estratégica e personalizada para cada cliente. Unimos a tradição do Direito à modernidade da gestão jurídica de alto nível.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="bg-primary-container text-on-primary font-label-md text-label-md uppercase tracking-wider px-8 py-5 flex items-center justify-center gap-3 hover:shadow-xl hover:-translate-y-1 transition-all active:opacity-90" href="https://wa.me/5511955692964">
+<span class="material-symbols-outlined">chat</span>
+                            Iniciar Consulta via WhatsApp
+                        </a>
+<a class="border border-primary text-primary font-label-md text-label-md uppercase tracking-wider px-8 py-5 flex items-center justify-center hover:bg-primary-container/5 transition-all" href="#atuacao">
+                            Conhecer Atuação
+                        </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Signature Divider -->
+<div class="signature-divider max-w-container-max mx-auto px-gutter">
+<div class="gold-accent"></div>
+</div>
+<!-- Seção de Atuação -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop bg-surface-container-lowest" id="atuacao">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="text-center mb-20">
+<h2 class="font-headline-md text-headline-md-mobile md:text-headline-md text-primary mb-4">Áreas de Especialização</h2>
+<div class="w-16 h-1 bg-secondary mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Direito Civil -->
+<div class="group p-8 border border-outline-variant/30 bg-background transition-all duration-500 hover:shadow-lg hover:border-secondary/30">
+<div class="mb-6 text-secondary">
+<span class="material-symbols-outlined !text-4xl" data-weight="fill">gavel</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary mb-4">Direito Civil</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+                            Resolução de conflitos patrimoniais, contratos complexos e responsabilidade civil com foco na preservação de interesses e mitigação de riscos.
+                        </p>
+<ul class="space-y-3">
+<li class="flex items-center gap-2 font-label-md text-label-md text-on-surface-variant">
+<span class="w-1.5 h-1.5 bg-secondary rotate-45"></span> Contratos e Obrigações
+                            </li>
+<li class="flex items-center gap-2 font-label-md text-label-md text-on-surface-variant">
+<span class="w-1.5 h-1.5 bg-secondary rotate-45"></span> Posse e Propriedade
+                            </li>
+<li class="flex items-center gap-2 font-label-md text-label-md text-on-surface-variant">
+<span class="w-1.5 h-1.5 bg-secondary rotate-45"></span> Danos Morais e Materiais
+                            </li>
+</ul>
+</div>
+<!-- Família -->
+<div class="group p-8 border border-outline-variant/30 bg-background transition-all duration-500 hover:shadow-lg hover:border-secondary/30">
+<div class="mb-6 text-secondary">
+<span class="material-symbols-outlined !text-4xl" data-weight="fill">diversity_1</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary mb-4">Direito de Família</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+                            Atuação pautada pela sensibilidade e rigor jurídico em questões sucessórias, divórcios e planejamento familiar estratégico.
+                        </p>
+<ul class="space-y-3">
+<li class="flex items-center gap-2 font-label-md text-label-md text-on-surface-variant">
+<span class="w-1.5 h-1.5 bg-secondary rotate-45"></span> Divórcio e Partilha
+                            </li>
+<li class="flex items-center gap-2 font-label-md text-label-md text-on-surface-variant">
+<span class="w-1.5 h-1.5 bg-secondary rotate-45"></span> Guarda e Alimentos
+                            </li>
+<li class="flex items-center gap-2 font-label-md text-label-md text-on-surface-variant">
+<span class="w-1.5 h-1.5 bg-secondary rotate-45"></span> Planejamento Sucessório
+                            </li>
+</ul>
+</div>
+<!-- Trabalhista -->
+<div class="group p-8 border border-outline-variant/30 bg-background transition-all duration-500 hover:shadow-lg hover:border-secondary/30">
+<div class="mb-6 text-secondary">
+<span class="material-symbols-outlined !text-4xl" data-weight="fill">work</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary mb-4">Direito Trabalhista</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+                            Defesa técnica de direitos laborais, consultoria preventiva e contencioso estratégico para colaboradores e executivos.
+                        </p>
+<ul class="space-y-3">
+<li class="flex items-center gap-2 font-label-md text-label-md text-on-surface-variant">
+<span class="w-1.5 h-1.5 bg-secondary rotate-45"></span> Reclamações Trabalhistas
+                            </li>
+<li class="flex items-center gap-2 font-label-md text-label-md text-on-surface-variant">
+<span class="w-1.5 h-1.5 bg-secondary rotate-45"></span> Rescisões Indiretas
+                            </li>
+<li class="flex items-center gap-2 font-label-md text-label-md text-on-surface-variant">
+<span class="w-1.5 h-1.5 bg-secondary rotate-45"></span> Danos no Ambiente de Trabalho
+                            </li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Seção de Diferencial (Editorial) -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop bg-background overflow-hidden" id="escritorio">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="flex flex-col md:flex-row items-center gap-20">
+<div class="w-full md:w-1/2 relative">
+<div class="aspect-[4/5] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A professional portrait of a senior lawyer, female, looking confident and composed in a high-end modern law office. The lighting is soft and professional, highlighting the textures of her dark blue suit and the minimalist white office background. The overall aesthetic is editorial and premium, with a palette of navy and white." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDr_mXyLhm9W0eBR9hFUd7U2PoFfhyiK5Rsp3-blPfHIxpwO9FSDIQ_cjylsSbg0UmxiOpHOkUnpxHGTWJuS1iQlVDSUJ9wdpNzuYNe0FnGUYBdJfZfsaLUEqN_4phiIVA_ubKtIocvoqHawvBpldUdQ7Ka3Pc8jHLgVCDV88QgxPOVBrFwfsAKVRnJDQW17NjXlXAmEPzh68rN8aTb9WPpl6aoESqUJfCezQmS0Xr76ekUlVvBjbjXkIiYi5YmhlcnOZ-gvXbNwXy9"/>
+</div>
+<div class="absolute -bottom-8 -right-8 bg-secondary-container p-10 hidden md:block">
+<p class="font-headline-md text-on-secondary-container">+15 Anos</p>
+<p class="font-label-md text-on-secondary-container uppercase tracking-widest">De Experiência</p>
+</div>
+</div>
+<div class="w-full md:w-1/2">
+<span class="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary mb-4 block">Diferencial Estratégico</span>
+<h2 class="font-headline-md text-headline-md-mobile md:text-headline-md text-primary mb-8 leading-tight">Abordagem Técnica e Humanizada para Resultados Concretos</h2>
+<div class="space-y-12">
+<div>
+<h4 class="font-title-lg text-title-lg text-primary mb-2 flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">verified_user</span>
+                                    Experiência comprovada
+                                </h4>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                                    Nosso escritório não se baseia em promessas, mas em precedentes e jurisprudência sólida. Cada tese jurídica é construída com rigor intelectual para garantir a maior probabilidade de êxito.
+                                </p>
+</div>
+<div>
+<h4 class="font-title-lg text-title-lg text-primary mb-2 flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">psychology</span>
+                                    Resultado garantido por estratégia
+                                </h4>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                                    Acreditamos que o melhor resultado vem de um atendimento personalizado. Você não é apenas um número de processo; cada detalhe do seu caso é analisado pessoalmente pela Dra. Larissa Lima.
+                                </p>
+</div>
+</div>
+<div class="mt-12 flex items-center gap-6 p-6 border-l-4 border-secondary bg-surface-container-low">
+<div class="material-symbols-outlined text-secondary !text-5xl">balance</div>
+<p class="font-body-md text-body-md italic text-on-surface italic">
+                                "A justiça é a constante e perpétua vontade de dar a cada um o que é seu."
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Signature Divider -->
+<div class="signature-divider max-w-container-max mx-auto px-gutter">
+<div class="gold-accent"></div>
+</div>
+<!-- Seção de Contato -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop bg-surface-container-low" id="contato">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="bg-primary-container text-on-primary p-12 md:p-24 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-12">
+<div class="relative z-10 max-w-xl">
+<h2 class="font-headline-md text-headline-md-mobile md:text-headline-md mb-6">Pronto para dar o próximo passo na proteção dos seus direitos?</h2>
+<p class="font-body-lg text-body-lg text-primary-fixed opacity-90 mb-8">
+                            Entre em contato agora para uma análise preliminar honesta e direta do seu caso. Sem intermediários, sem burocracia excessiva.
+                        </p>
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary-fixed">phone_iphone</span>
+<span class="font-title-lg text-title-lg">(11) 95569-2964</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary-fixed">location_on</span>
+<span class="font-body-md text-body-md">Av. Paulista, 1000 - Bela Vista, São Paulo/SP</span>
+</div>
+</div>
+</div>
+<div class="relative z-10 w-full md:w-auto">
+<a class="w-full md:w-auto inline-flex items-center justify-center gap-4 bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md uppercase tracking-[0.1em] px-12 py-6 hover:bg-secondary-fixed-dim transition-all group" href="https://wa.me/5511955692964">
+                            Enviar Mensagem WhatsApp
+                            <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</a>
+</div>
+<!-- Abstract decorative elements -->
+<div class="absolute -top-10 -right-10 w-64 h-64 bg-secondary/10 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-20 -left-20 w-96 h-96 bg-primary/20 rounded-full blur-3xl"></div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-on-surface w-full py-section-gap-mobile md:py-section-gap-desktop border-t border-outline-variant/20">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter flex flex-col items-center text-center">
+<div class="font-headline-md text-headline-md text-primary dark:text-primary-fixed-dim mb-8">
+                Larissa Lima Advocacia
+            </div>
+<div class="flex flex-wrap justify-center gap-8 mb-12">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary-container transition-all" href="#">Termos de Uso</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary-container transition-all" href="#">Privacidade</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary-container transition-all" href="https://wa.me/5511955692964">WhatsApp</a>
+</div>
+<div class="w-full h-px bg-outline-variant/20 mb-8"></div>
+<div class="font-body-md text-body-md text-on-surface-variant opacity-70">
+                © 2024 Larissa Lima Advocacia. Todos os direitos reservados.
+            </div>
+</div>
+</footer>
+<script>
+        // Simple scroll effect for navbar
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-md');
+                navbar.classList.remove('h-20');
+                navbar.classList.add('h-16');
+            } else {
+                navbar.classList.remove('shadow-md');
+                navbar.classList.remove('h-16');
+                navbar.classList.add('h-20');
+            }
+        });
+    </script>
+</body></html>
